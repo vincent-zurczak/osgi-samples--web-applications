@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipojo 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="org.apache.felix.ipojo http://felix.apache.org/ipojo/schemas/CURRENT/core.xsd"
+		xmlns="org.apache.felix.ipojo">
+
+	<!-- Default component -->
+	<component classname="net.vzurczak.sample.impl.internal.MyServiceImpl" immediate="true" name="my-service-impl" public="false">
+		<provides />
+	</component>
+	
+	<!-- Since its component's factory is not public, it is a singleton instance. -->
+	<instance component="my-service-impl" name="Default Instance for My Service" />
+</ipojo>
